@@ -1,0 +1,13 @@
+packages:
+  - name: cloud
+    actions:
+      - name: matMul
+        binary: false
+        runtime: 'nodejs:default'
+        web: true
+        parameters: {}
+        environment: {}
+        annotations: {}
+        limits:
+          timeout: 50000
+          memory: 512
